@@ -11,3 +11,5 @@ RNNs have two main difficulties:
 - For very long sequences, convolutional neural networks can actually work quite well too.
 
 ### Recurrent Neurons and Layers
+![A recurrent neuron (left) unrolled through time (right)]()
+A recurrent neuron (left) unrolled through time (right)
