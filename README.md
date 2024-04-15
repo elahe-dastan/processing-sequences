@@ -19,4 +19,4 @@ A recurrent neuron (left) unrolled through time (right)
 
 A layer of recurrent neurons (left) unrolled through time (right)
 
-### Memory Cells
+### Memory Cells (p=540)
