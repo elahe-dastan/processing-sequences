@@ -13,3 +13,7 @@ RNNs have two main difficulties:
 ### Recurrent Neurons and Layers
 ![A recurrent neuron (left) unrolled through time (right)](images/photo_2024-04-15_21-43-37.jpg)
 A recurrent neuron (left) unrolled through time (right)
+
+![A layer of recurrent neurons (left) unrolled through time (right)](images/photo_2024-04-15_21-43-37.jpg)
+A layer of recurrent neurons (left) unrolled through time (right)
+
