@@ -19,4 +19,18 @@ A recurrent neuron (left) unrolled through time (right)
 
 A layer of recurrent neurons (left) unrolled through time (right)
 
-### Memory Cells (p=540)
+### Memory Cells 
+Since the output of a recurrent neuron at time step t is a function of all the inputs from previous time steps, you could say it has a form of memory.
+
+A single recurrent neuron or a layer of recurrent neurons, is a very basic cell, capable of learning only short patterns (typically about 10 steps long, but this varies depending on the task).
+
+h(t) = f(x(t), h(t-1))
+
+In the case of the basic cells, we have discussed so far, the output is just equal to the state.
+
+### Input and Output Sequences
+1. sequence-to-sequence network: forecast time series
+2. sequence-to-vector network: ignore all outputs except for the last one. feed the network a sequence of words and the network would output a sentiment score
+3. vector-to-sequence network: caption for an image
+4. encoder-decoder: a sequence-to-vector network (encoder) followed by a vector-to-sequence network (decoder). In translating a sentence works much better than trying to translate on the fly  with a single sequence to sequence RNN. The last words of a squence can affect the first words of the translation.
+
