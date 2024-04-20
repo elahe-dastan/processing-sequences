@@ -35,7 +35,7 @@ In the case of the basic cells, we have discussed so far, the output is just equ
 4. encoder-decoder: a sequence-to-vector network (encoder) followed by a vector-to-sequence network (decoder). In translating a sentence works much better than trying to translate on the fly  with a single sequence to sequence RNN. The last words of a squence can affect the first words of the translation.
 
 ![Sequence-to-sequence (top left), sequence-to-vector (top right), vector-tosequence
-(bottom left), and encoder–decoder (bottom right) networks](images/input-output-sequence)
+(bottom left), and encoder–decoder (bottom right) networks](images/photo_2024-04-20_13-10-14.jpg)
 
 Sequence-to-sequence (top left), sequence-to-vector (top right), vector-tosequence
 (bottom left), and encoder–decoder (bottom right) networks
