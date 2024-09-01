@@ -42,7 +42,14 @@ Sequence-to-sequence (top left), sequence-to-vector (top right), vector-tosequen
 
 ### Training RNNs
 ![Backpropagation through time)](images/bptt.jpg)
+
 Backpropagation through time
 
-### Training RNNs
+### Forecasting a Time Series
+naive forecasting: simply copying a past value to make our forecast. Naive forecasting is often a great baseline, and it can even be tricky to beat in some cases.
+
+When a time series is correlated with a lagged version of itself, we say that the time series is autocorrelated.
+
+![Backpropagation through time)](images/bptt.jpg)
+
 
