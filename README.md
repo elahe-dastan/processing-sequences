@@ -50,6 +50,6 @@ naive forecasting: simply copying a past value to make our forecast. Naive forec
 
 When a time series is correlated with a lagged version of itself, we say that the time series is autocorrelated.
 
-![Backpropagation through time)](images/bptt.jpg)
+![time series)](images/time-series.jpg)
 
 
