@@ -40,4 +40,7 @@ In the case of the basic cells, we have discussed so far, the output is just equ
 Sequence-to-sequence (top left), sequence-to-vector (top right), vector-tosequence
 (bottom left), and encoder–decoder (bottom right) networks
 
-### Training RNNs (542)
+### Training RNNs
+
+### Training RNNs
+
