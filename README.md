@@ -41,6 +41,8 @@ Sequence-to-sequence (top left), sequence-to-vector (top right), vector-tosequen
 (bottom left), and encoder–decoder (bottom right) networks
 
 ### Training RNNs
+![Backpropagation through time)](images/bptt.jpg)
+Backpropagation through time
 
 ### Training RNNs
 
