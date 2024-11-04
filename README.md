@@ -59,4 +59,8 @@ Differencing is a common technique used to remove trend and seasonality from a t
 ### The ARMA Model Family
 Autoregressive moving average (ARMA): Coumputes its forecasts using a simple weighted sum of lagged values and corrects these forecasts by adding a moving average.
 
+![images/photo_2024-11-04_18-08-33.jpg](images/photo_2024-11-04_18-08-33.jpg)
+
+The first sum is the autoregressive component. The second sum is the moving average component.
+
 
