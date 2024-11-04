@@ -56,4 +56,7 @@ Time series overlaid with 7-day lagged time series (top), and difference between
 
 Differencing is a common technique used to remove trend and seasonality from a time series: it's easier to study a **stationary** time series, meaning one whose statistical properties remain constant over time, without any seasonality or trends. Once you are able to make accurate forecasts on the differenced time series, it's easy to turn them into forecasts for the actual time series by just adding back the past values that were previously subtracted.
 
-### The ARMA Model Family (549)
+### The ARMA Model Family
+Autoregressive moving average (ARMA): Coumputes its forecasts using a simple weighted sum of lagged values and corrects these forecasts by adding a moving average.
+
+
