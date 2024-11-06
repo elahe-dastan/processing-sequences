@@ -63,4 +63,8 @@ Autoregressive moving average (ARMA): Coumputes its forecasts using a simple wei
 
 The first sum is the autoregressive component. The second sum is the moving average component.
 
+The model assumes the time series is stationary. Using differencing over a single time step will produce an approximation of the derivative of the time series (slope of the series) (eliminate any linear trend).
+
+If the original time series has a quadratic trend, then a single round of differencing will not be enough. Running d consecutive rounds of differencing computes an approximation of the dth order derivative of the time series, so it will eliminate polynomial trends up to degree d. This hyperparameter d is called the order of integration.
+
 
