@@ -67,4 +67,5 @@ The model assumes the time series is stationary. Using differencing over a singl
 
 If the original time series has a quadratic trend, then a single round of differencing will not be enough. Running d consecutive rounds of differencing computes an approximation of the dth order derivative of the time series, so it will eliminate polynomial trends up to degree d. This hyperparameter d is called the order of integration.
 
+Autoregressive integrated moving average (ARIMA) runs d rounds of differencing to make the time series more stationary, after applying ARMA it adds back the terms that were subtracted by differencing.
 
