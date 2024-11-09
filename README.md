@@ -77,3 +77,10 @@ Since gradient descent expects the instances in the training set to be independe
 
 ### Forecasting Multivariate Time Series
 Using a single model for multiple related tasks often results in better performance than using a separate model for each task, since features learned for one task may be useful for the other tasks, and also because having to perform well across multiple tasks prevents the model from overfitting (it's a form of regularization).
+
+### Handling Long Sequences
+1. takes forever to train
+2. gradually forgets the first inputs
+3. training my be unstable
+
+
