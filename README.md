@@ -69,3 +69,7 @@ If the original time series has a quadratic trend, then a single round of differ
 
 Autoregressive integrated moving average (ARIMA) runs d rounds of differencing to make the time series more stationary, after applying ARMA it adds back the terms that were subtracted by differencing.
 
+Seasonal ARIMA (SARIMA): models the time series in the same way as ARIMA, but it additionally models a seasonal component for a given frequency (e.g., weekly).
+
+There are principled approaches to selecting good hyperparameters, based on analyzing the autocorrelation function (ACF) and partial autocorrelation function (PACF_, or minimizing the AIC or BIC metrics to penalize models that use too many parameters.
+
