@@ -74,3 +74,6 @@ Seasonal ARIMA (SARIMA): models the time series in the same way as ARIMA, but it
 There are principled approaches to selecting good hyperparameters, based on analyzing the autocorrelation function (ACF) and partial autocorrelation function (PACF_, or minimizing the AIC or BIC metrics to penalize models that use too many parameters.
 
 Since gradient descent expects the instances in the training set to be independent and identically distributed, we must set the argument shuffle=True to shuffle the training windows.
+
+### Forecasting Multivariate Time Series
+Using a single model for multiple related tasks often results in better performance than using a separate model for each task, since features learned for one task may be useful for the other tasks, and also because having to perform well across multiple tasks prevents the model from overfitting (it's a form of regularization).
