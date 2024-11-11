@@ -95,3 +95,4 @@ To reduce this risk:
 1. smaller learning rate
 2. use a saturating activation function (like hyperbolic tangent (default))
 
+In much the same way, the gradients themselves can explode. If you notice that training is unstable, you may want to monitor the size of gradients and perhaps use gradient clipping.
