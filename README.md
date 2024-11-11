@@ -83,4 +83,11 @@ Using a single model for multiple related tasks often results in better performa
 2. gradually forgets the first inputs
 3. training my be unstable
 
+### Fighting the Unstable Gradients Problem
+To alleviate:
+1. good parameter initialization
+2. faster optimizers
+3. dropout
+
+Nonsaturating activation functions (e.g., ReLU) may not help as much here (may actually lead the RNN to be even more unstable). Suppose gradient descent updates the weights in a way that increases the outputs slightly at the first time step.
 
