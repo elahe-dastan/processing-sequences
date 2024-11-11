@@ -89,5 +89,9 @@ To alleviate:
 2. faster optimizers
 3. dropout
 
-Nonsaturating activation functions (e.g., ReLU) may not help as much here (may actually lead the RNN to be even more unstable). Suppose gradient descent updates the weights in a way that increases the outputs slightly at the first time step.
+Nonsaturating activation functions (e.g., ReLU) may not help as much here (may actually lead the RNN to be even more unstable). Suppose gradient descent updates the weights in a way that increases the outputs slightly at the first time step. Because the same weights are used at every time step (Weight Sharing), the outputs at the second time step may also be slightly increased and those at third, and so on until the outputs explode--and a nonsaturating activation function does not prevent that.
+
+To reduce this risk:
+1. smaller learning rate
+2. use a saturating activation function (like hyperbolic tangent (default))
 
