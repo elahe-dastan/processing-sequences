@@ -108,3 +108,5 @@ It is technically possible to add a BN layer to a memory cell, so that it will b
 One advantage of layer normalization is that it can compute the required statistics on the fly, at each time step, independently for each instance. This also means that it behaves the same way during training and testing (as opposed to BN), and it does not need to use exponential moving averages to estimate the feature statistics across all instances in the training set, like BN does.
 
 Exponential moving averages is a technique used to maintain a running average of batch statistics. The purpose is to estimate these statistics during training, so they can be used later during inference.
+
+When forecasting time series, it is useful to have some error bars along with your predictions. One approach is MC (Monte Carlo) dropout: use recurrent_dropout during training, then keep dropout active at inference time (model(X, training=True)). Repeat this several times, then compute the mean and standard deviation of these predictions for each time step.
