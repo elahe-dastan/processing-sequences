@@ -96,3 +96,13 @@ To reduce this risk:
 2. use a saturating activation function (like hyperbolic tangent (default))
 
 In much the same way, the gradients themselves can explode. If you notice that training is unstable, you may want to monitor the size of gradients and perhaps use gradient clipping.
+
+| Aspect | Batch Normalization | Layer Normalization |
+|--------|---------------------|---------------------|
+|Normalization Scope| Across batch (dimension-wise) | Across features (within each sample)|
+|Batch Size Dependence| Yes | No|
+|Best Use Case| Convolutional and dense networks | RNNs, transformers and small or variable batch sizes|
+
+It is technically possible to add a BN layer to a memory cell, so that it will be applied at each time step. However, the same BN layer will be used at each time step, with the same parameters, regardless of the actual scale and offset of the inputs and hidden state. This does not yield good results.
+
+One advantage of layer normalization is that it can compute the required statistics on the fly, at each time step, independently for each instance. This also means that it behaves the same way during training and testing (as opposed to BN), and it does not need to use exponential moving averages to estimate the feature statistics across all instances in the training set, like BN does.
