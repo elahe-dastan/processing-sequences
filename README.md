@@ -106,3 +106,5 @@ In much the same way, the gradients themselves can explode. If you notice that t
 It is technically possible to add a BN layer to a memory cell, so that it will be applied at each time step. However, the same BN layer will be used at each time step, with the same parameters, regardless of the actual scale and offset of the inputs and hidden state. This does not yield good results.
 
 One advantage of layer normalization is that it can compute the required statistics on the fly, at each time step, independently for each instance. This also means that it behaves the same way during training and testing (as opposed to BN), and it does not need to use exponential moving averages to estimate the feature statistics across all instances in the training set, like BN does.
+
+Exponential moving averages is a technique used to maintain a running average of batch statistics. The purpose is to estimate these statistics during training, so they can be used later during inference.
