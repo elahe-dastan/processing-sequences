@@ -128,5 +128,9 @@ f(t), i(t) and o(t) are gate controllers. Since they use the logistic activation
 - input gate: which parts of g(t) should be added to the long-term state
 - output gate: which parts of the long-term state should be read and output at this time step, both to h(t) and to y(t)
 
+#### GRU cells
+Gated recurrent unit is a simplified version of the LSTM cell, seems to perform just as well.
 
+#### Using 1D convolutional layers to process sequences
+A 1D convolutional layer slides several kernels across a sequence, producing a 1D feature map per kernel. Each kernel will learn to detect a single very short sequential pattern (no longer than the kernel size). By shortening the sequences the convolutional layer may help the GRU layers detect longer patterns.
 
