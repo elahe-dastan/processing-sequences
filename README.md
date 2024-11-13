@@ -110,3 +110,11 @@ One advantage of layer normalization is that it can compute the required statist
 Exponential moving averages is a technique used to maintain a running average of batch statistics. The purpose is to estimate these statistics during training, so they can be used later during inference.
 
 When forecasting time series, it is useful to have some error bars along with your predictions. One approach is MC (Monte Carlo) dropout: use recurrent_dropout during training, then keep dropout active at inference time (model(X, training=True)). Repeat this several times, then compute the mean and standard deviation of these predictions for each time step.
+
+### Tackling the Short-Term Memory Problem
+#### LSTM cells
+Long short-term memory:
+1. converge faster
+2. detect longer-term patterns
+
+Its state is split into two vectors: h(t) (short-term state) and c(t) (long-term state).
