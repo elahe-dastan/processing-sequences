@@ -118,3 +118,8 @@ Long short-term memory:
 2. detect longer-term patterns
 
 Its state is split into two vectors: h(t) (short-term state) and c(t) (long-term state).
+
+![images/photo_2024-11-13_03-59-33.jpg](images/photo_2024-11-13_03-59-33.jpg)
+
+An LSTM cell
+
