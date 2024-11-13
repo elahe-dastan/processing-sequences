@@ -123,3 +123,10 @@ Its state is split into two vectors: h(t) (short-term state) and c(t) (long-term
 
 An LSTM cell
 
+f(t), i(t) and o(t) are gate controllers. Since they use the logistic activation function, the outputs range from 0 to 1. The gate controllers' outputs are fed to element-wise multiplication operations: if they output 0s they close the gate, and if they output 1s they open it:
+- forget gate: which parts of the long-term state should be erased
+- input gate: which parts of g(t) should be added to the long-term state
+- output gate: which parts of the long-term state should be read and output at this time step, both to h(t) and to y(t)
+
+
+
