@@ -135,4 +135,4 @@ Gated recurrent unit is a simplified version of the LSTM cell, seems to perform 
 A 1D convolutional layer slides several kernels across a sequence, producing a 1D feature map per kernel. Each kernel will learn to detect a single very short sequential pattern (no longer than the kernel size). By shortening the sequences the convolutional layer may help the GRU layers detect longer patterns.
 
 #### WaveNet
-They stacked 1D convolutional layers, doubling the dilation rate (how spread apart each neuron's inputs are) at every layer: 
+They stacked 1D convolutional layers, doubling the dilation rate (how spread apart each neuron's inputs are) at every layer: the first convolutional layer gets a glimpse of just two time steps at a time, while the next one sees four time steps (its receptive field is four time steps long). The lower layer learns short-term patterns, while the higher layers learn long-term patterns. Thanks to the doubling dilation rate, the network can process extremely large sequences very efficiently.
