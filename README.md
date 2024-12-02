@@ -140,3 +140,7 @@ They stacked 1D convolutional layers, doubling the dilation rate (how spread apa
 ![images/wavenet.jpg](images/wavenet.jpg)
 
 A single stack of 10 convolutional layers with these dilation rates will act like a super-efficient convolutional layer with a kernel of size 1024 (except way faster, more powerful, and using significantly fewer parameters). They also left-padded the input sequences with a nuber of zeros equal to the dilation rate before every layer, to preserve the same sequence lenght throughout the network.
+
+Causal padding, which is like same padding except that zeros are appended only at the start of the input sequence ensures that the convolutional layer does not peek into the future.
+
+In the WaveNet paper, the authors achived state-of-the-art performance on various audio tasks (hence the name) including text-to-speech tasks. A single second of audio can contain tens of thousands of time-steps.
