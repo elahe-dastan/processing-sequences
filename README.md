@@ -138,3 +138,5 @@ A 1D convolutional layer slides several kernels across a sequence, producing a 1
 They stacked 1D convolutional layers, doubling the dilation rate (how spread apart each neuron's inputs are) at every layer: the first convolutional layer gets a glimpse of just two time steps at a time, while the next one sees four time steps (its receptive field is four time steps long). The lower layer learns short-term patterns, while the higher layers learn long-term patterns. Thanks to the doubling dilation rate, the network can process extremely large sequences very efficiently.
 
 ![images/wavenet.jpg](images/wavenet.jpg)
+
+A single stack of 10 convolutional layers with these dilation rates will act like a super-efficient convolutional layer with a kernel of size 1024 (except way faster, more powerful, and using significantly fewer parameters). They also left-padded the input sequences with a nuber of zeros equal to the dilation rate before every layer, to preserve the same sequence lenght throughout the network.
